@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Custom styles */
+@layer base {
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .skill-bar {
+    @apply h-2 rounded-full bg-gray-200 overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply h-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-600;
+  }
+  
+  .tag {
+    @apply bg-white/20 px-3 py-1 rounded-full text-sm backdrop-blur-sm;
+  }
+}
